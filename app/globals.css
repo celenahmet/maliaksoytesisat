@@ -190,7 +190,10 @@ footer { background: #eaf2fb; color: #071b36; padding: 70px 6vw 26px; border-top
 .chat-options button > span svg, .fee-options button > span svg { width: 14px; height: 14px; stroke-width: 1.8; }
 .chat-form textarea { width: 100%; min-height: 116px; padding: 11px 12px; border: 1px solid #cbd9d2; border-radius: 9px; outline: none; resize: vertical; background: white; color: #17372a; font-size: 12px; line-height: 1.5; transition: border-color .2s ease, box-shadow .2s ease; }
 .chat-form textarea:focus { border-color: #22c563; box-shadow: 0 0 0 3px rgba(34,197,99,.12); }
+.chat-field-hint { margin-top: -1px; color: #6b8177; font-size: 8px; font-weight: 600; line-height: 1.45; letter-spacing: 0; }
+.chat-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; opacity: 0 !important; pointer-events: none !important; }
 .chat-next, .chat-send { gap: 9px; }
+.chat-send.locked { cursor: wait; opacity: .68; box-shadow: none; }
 .chat-send > svg:first-child { width: 18px; height: 18px; flex: 0 0 auto; fill: currentColor; }
 .wa-icon svg { fill: currentColor; stroke: none; }
 .chat-note-stage .chat-bubble { display: flex; align-items: flex-start; gap: 9px; }

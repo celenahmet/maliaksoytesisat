@@ -96,7 +96,7 @@ const copy = {
     ticker: ["ELEKTRİK ARIZA TESPİTİ", "KÜÇÜK EV ALETLERİ", "KOMBİ BAKIMI", "PETEK TEMİZLİĞİ", "SU KAÇAĞI", "TIKANIKLIK AÇMA", "Hızlı teşhis, özenli işçilik, güvenilir servis"],
     a11y: { menu: "Erişilebilirlik", open: "Erişilebilirlik menüsünü aç", move: "Taşımak için sürükleyin", text: "Yazıyı Büyüt", contrast: "Kontrast", read: "Sesli Okuma", stopRead: "Okumayı Durdur", links: "Link Vurgula", cursor: "İmleç Büyüt", guide: "Okuma Çubuğu", images: "Görsel Gizle", reset: "Sıfırla" },
     chat: {
-      aria: "WhatsApp hızlı iletişim", assistant: "M. Ali Aksoy Servis Asistanı", online: "çevrimiçi", step: "adım", close: "Sohbeti kapat", settings: "Görünüm ayarları", compactView: "Kompakt", verticalView: "Dikey", callUs: "Bizi arayın", hello: "Merhaba! Önce ihtiyacınız olan hizmet kategorisini seçin.", backService: "Hizmet seçimine dön", selectIssue: "Arıza veya işlem türünü seçin.", backIssue: "Arıza seçimine dön", createRecord: "için servis kaydı oluşturalım.", fullName: "Ad Soyad", fullNamePlaceholder: "Adınız ve soyadınız", phoneNumber: "Telefon Numarası", phonePlaceholder: "05xx xxx xx xx", address: "Adres / İlçe (isteğe bağlı)", addressPlaceholder: "Örn. Sincan, Etimesgut...", otherNoteLabel: "Arızayı kısaca açıklayın", otherNotePlaceholder: "Diğer arıza veya cihazla ilgili kısa bilgi...", otherNoteError: "Diğer seçimi için kısa bir açıklama yazın.", continue: "Devam et", nameError: "Lütfen adınızı ve soyadınızı yazın.", phoneError: "Lütfen geçerli bir telefon numarası yazın.", backContact: "İletişim bilgilerine dön", feePrompt: "Servis ücreti tercihinizi seçin.", repair: "Garanti tamir ettireceğim", visit: "Yalnızca servis ücreti", policy: "Tamir garanti edilmedikçe servis ücreti alınır. Tamir garanti edilirse servis ücreti alınmaz. Ankara içi hizmet verilir.", backFee: "Servis tercihine dön", notePrompt: "Eklemek istediğiniz bir not var mı? Bu alan isteğe bağlıdır.", noteLabel: "Ek not (isteğe bağlı)", notePlaceholder: "Arızanın ne zaman başladığı, cihaz modeli veya uygun olduğunuz saat...", mediaHint: "Fotoğraf ve video eklerini WhatsApp’a geçtikten sonra gönderebilirsiniz.", skip: "Not eklemeden devam et", summary: "Bilgileriniz hazır. WhatsApp’a geçtiğinizde aşağıdaki mesaj otomatik oluşturulacak.", changeNote: "Notu değiştir", service: "Hizmet", issue: "Arıza", preference: "Tercih", customerNote: "Müşteri notu", send: "WhatsApp’a gönder", newRequest: "Yeni talep oluştur", open: "WhatsApp sohbetini aç", defaultMessage: "Merhaba, hizmetleriniz hakkında fiyat almak istiyorum.", requestIntro: "Merhaba, web sitenizden servis kaydı oluşturmak istiyorum.", attachments: "Fotoğraf ve videoları WhatsApp üzerinden ayrıca iletebilirim.", optionalNone: "Eklenmedi",
+      aria: "WhatsApp hızlı iletişim", assistant: "M. Ali Aksoy Servis Asistanı", online: "çevrimiçi", step: "adım", close: "Sohbeti kapat", settings: "Görünüm ayarları", compactView: "Kompakt", verticalView: "Dikey", callUs: "Bizi arayın", hello: "Merhaba! Önce ihtiyacınız olan hizmet kategorisini seçin.", backService: "Hizmet seçimine dön", selectIssue: "Arıza veya işlem türünü seçin.", backIssue: "Arıza seçimine dön", createRecord: "için servis kaydı oluşturalım.", fullName: "Ad Soyad", fullNamePlaceholder: "Adınız ve soyadınız", phoneNumber: "Telefon Numarası", phonePlaceholder: "+90, sabit hat veya kurumsal numara", phoneHint: "Türkiye ve yurt dışı; mobil, sabit, kurumsal ve dahili numaralar kabul edilir.", email: "E-posta (isteğe bağlı)", emailPlaceholder: "ornek@eposta.com", address: "Adres / İlçe (isteğe bağlı)", addressPlaceholder: "Örn. Sincan, Etimesgut...", otherNoteLabel: "Arızayı kısaca açıklayın", otherNotePlaceholder: "Diğer arıza veya cihazla ilgili kısa bilgi...", otherNoteError: "Diğer seçimi için kısa bir açıklama yazın.", continue: "Devam et", nameError: "Lütfen adınızı ve soyadınızı yazın.", phoneError: "Telefon numarasını ülke koduyla veya geçerli yerel/kurumsal formatta yazın.", emailError: "Lütfen geçerli bir e-posta adresi yazın veya alanı boş bırakın.", spamError: "İşlem çok hızlı tekrarlandı. Lütfen birkaç saniye bekleyip yeniden deneyin.", backContact: "İletişim bilgilerine dön", feePrompt: "Servis ücreti tercihinizi seçin.", repair: "Garanti tamir ettireceğim", visit: "Yalnızca servis ücreti", policy: "Tamir garanti edilmedikçe servis ücreti alınır. Tamir garanti edilirse servis ücreti alınmaz. Ankara içi hizmet verilir.", backFee: "Servis tercihine dön", notePrompt: "Eklemek istediğiniz bir not var mı? Bu alan isteğe bağlıdır.", noteLabel: "Ek not (isteğe bağlı)", notePlaceholder: "Arızanın ne zaman başladığı, cihaz modeli veya uygun olduğunuz saat...", mediaHint: "Fotoğraf ve video eklerini WhatsApp’a geçtikten sonra gönderebilirsiniz.", skip: "Not eklemeden devam et", summary: "Bilgileriniz hazır. WhatsApp’a geçtiğinizde aşağıdaki mesaj otomatik oluşturulacak.", changeNote: "Notu değiştir", service: "Hizmet", issue: "Arıza", preference: "Tercih", customerNote: "Müşteri notu", send: "WhatsApp’a gönder", sending: "WhatsApp açıldı", newRequest: "Yeni talep oluştur", open: "WhatsApp sohbetini aç", defaultMessage: "Merhaba, hizmetleriniz hakkında fiyat almak istiyorum.", requestIntro: "Merhaba, web sitenizden servis kaydı oluşturmak istiyorum.", attachments: "Fotoğraf ve videoları WhatsApp üzerinden ayrıca iletebilirim.", optionalNone: "Eklenmedi",
     },
   },
   en: {
@@ -120,13 +120,44 @@ const copy = {
     ticker: ["ELECTRICAL FAULT DETECTION", "SMALL APPLIANCES", "BOILER CARE", "RADIATOR CLEANING", "WATER LEAKS", "BLOCKAGE REMOVAL", "Fast diagnosis, careful workmanship, dependable service"],
     a11y: { menu: "Accessibility", open: "Open accessibility menu", move: "Drag to move", text: "Enlarge Text", contrast: "Contrast", read: "Read Aloud", stopRead: "Stop Reading", links: "Highlight Links", cursor: "Large Cursor", guide: "Reading Guide", images: "Hide Images", reset: "Reset" },
     chat: {
-      aria: "WhatsApp quick contact", assistant: "M. Ali Aksoy Service Assistant", online: "online", step: "step", close: "Close chat", settings: "Display settings", compactView: "Compact", verticalView: "Vertical", callUs: "Call us", hello: "Hello! First, choose the service category you need.", backService: "Back to services", selectIssue: "Choose the fault or service type.", backIssue: "Back to issue selection", createRecord: "— let’s create your service request.", fullName: "Full Name", fullNamePlaceholder: "Your full name", phoneNumber: "Phone Number", phonePlaceholder: "Your phone number", address: "Address / District (optional)", addressPlaceholder: "e.g. Sincan, Etimesgut...", otherNoteLabel: "Briefly describe the issue", otherNotePlaceholder: "A short description of the other issue or appliance...", otherNoteError: "Please add a short description for the other option.", continue: "Continue", nameError: "Please enter your full name.", phoneError: "Please enter a valid phone number.", backContact: "Back to contact details", feePrompt: "Choose your service fee preference.", repair: "I want a guaranteed repair", visit: "Call-out fee only", policy: "A service fee applies unless the repair is guaranteed. No service fee is charged when the repair is guaranteed. Service is available within Ankara.", backFee: "Back to service preference", notePrompt: "Would you like to add a note? This field is optional.", noteLabel: "Additional note (optional)", notePlaceholder: "When the issue started, appliance model or your preferred time...", mediaHint: "You can send photo and video attachments after continuing to WhatsApp.", skip: "Continue without a note", summary: "Your details are ready. The message below will be created automatically in WhatsApp.", changeNote: "Edit note", service: "Service", issue: "Issue", preference: "Preference", customerNote: "Customer note", send: "Send via WhatsApp", newRequest: "Create a new request", open: "Open WhatsApp chat", defaultMessage: "Hello, I would like to get a quote for your services.", requestIntro: "Hello, I would like to create a service request through your website.", attachments: "I can also send photos and videos via WhatsApp.", optionalNone: "Not added",
+      aria: "WhatsApp quick contact", assistant: "M. Ali Aksoy Service Assistant", online: "online", step: "step", close: "Close chat", settings: "Display settings", compactView: "Compact", verticalView: "Vertical", callUs: "Call us", hello: "Hello! First, choose the service category you need.", backService: "Back to services", selectIssue: "Choose the fault or service type.", backIssue: "Back to issue selection", createRecord: "— let’s create your service request.", fullName: "Full Name", fullNamePlaceholder: "Your full name", phoneNumber: "Phone Number", phonePlaceholder: "+90, landline or business number", phoneHint: "Local and international mobile, landline, business and extension numbers are accepted.", email: "Email (optional)", emailPlaceholder: "name@example.com", address: "Address / District (optional)", addressPlaceholder: "e.g. Sincan, Etimesgut...", otherNoteLabel: "Briefly describe the issue", otherNotePlaceholder: "A short description of the other issue or appliance...", otherNoteError: "Please add a short description for the other option.", continue: "Continue", nameError: "Please enter your full name.", phoneError: "Enter a valid local, international or business phone number.", emailError: "Enter a valid email address or leave this field blank.", spamError: "This action was repeated too quickly. Please wait a moment and try again.", backContact: "Back to contact details", feePrompt: "Choose your service fee preference.", repair: "I want a guaranteed repair", visit: "Call-out fee only", policy: "A service fee applies unless the repair is guaranteed. No service fee is charged when the repair is guaranteed. Service is available within Ankara.", backFee: "Back to service preference", notePrompt: "Would you like to add a note? This field is optional.", noteLabel: "Additional note (optional)", notePlaceholder: "When the issue started, appliance model or your preferred time...", mediaHint: "You can send photo and video attachments after continuing to WhatsApp.", skip: "Continue without a note", summary: "Your details are ready. The message below will be created automatically in WhatsApp.", changeNote: "Edit note", service: "Service", issue: "Issue", preference: "Preference", customerNote: "Customer note", send: "Send via WhatsApp", sending: "WhatsApp opened", newRequest: "Create a new request", open: "Open WhatsApp chat", defaultMessage: "Hello, I would like to get a quote for your services.", requestIntro: "Hello, I would like to create a service request through your website.", attachments: "I can also send photos and videos via WhatsApp.", optionalNone: "Not added",
     },
   },
 } as const;
 
 function whatsappUrl(message: string) {
   return `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(message)}`;
+}
+
+function cleanSingleLine(value: string, maxLength: number) {
+  return Array.from(value, (character) => {
+    const code = character.charCodeAt(0);
+    return code < 32 || code === 127 ? " " : character;
+  }).join("").replace(/\s+/g, " ").slice(0, maxLength);
+}
+
+function cleanEmailInput(value: string) {
+  return Array.from(value).filter((character) => {
+    const code = character.charCodeAt(0);
+    return code > 32 && code !== 127;
+  }).join("").slice(0, 254);
+}
+
+function isValidEmail(value: string) {
+  const email = value.trim();
+  return email.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/u.test(email);
+}
+
+function isValidFlexiblePhone(value: string) {
+  const phone = value.trim();
+  if (phone.length < 7 || phone.length > 40) return false;
+  if ((phone.match(/\+/g) ?? []).length > 1 || (phone.includes("+") && !phone.startsWith("+"))) return false;
+
+  const extension = phone.match(/(?:ext\.?|x|dahili)\s*[:.-]?\s*(\d{1,6})$/iu);
+  const mainNumber = extension ? phone.slice(0, extension.index).trim() : phone;
+  if (!/^[+\d\s().\-/#]+$/u.test(mainNumber)) return false;
+  const digitCount = mainNumber.replace(/\D/g, "").length;
+  return digitCount >= 7 && digitCount <= 15;
 }
 
 export default function Home() {
@@ -139,10 +170,13 @@ export default function Home() {
   const [selectedIssue, setSelectedIssue] = useState("");
   const [fullName, setFullName] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
+  const [customerEmail, setCustomerEmail] = useState("");
   const [customerDistrict, setCustomerDistrict] = useState("");
   const [feeChoice, setFeeChoice] = useState<"" | "repair" | "visit">("");
   const [customerNote, setCustomerNote] = useState("");
   const [formError, setFormError] = useState("");
+  const [spamTrap, setSpamTrap] = useState("");
+  const [sendLocked, setSendLocked] = useState(false);
   const [chatLayout, setChatLayout] = useState<"compact" | "vertical">("compact");
   const [chatSettingsOpen, setChatSettingsOpen] = useState(false);
   const [a11yOpen, setA11yOpen] = useState(false);
@@ -152,6 +186,8 @@ export default function Home() {
   const [pointerPosition, setPointerPosition] = useState({ x: 0, y: 0 });
   const a11yDragRef = useRef({ dragging: false, moved: false, startX: 0, startY: 0, originX: 0, originY: 0 });
   const suppressA11yClickRef = useRef(false);
+  const detailsOpenedAtRef = useRef(0);
+  const lastDetailsSubmitRef = useRef(0);
 
   const t = copy[language];
   const services = serviceCatalog.map((service) => ({ ...service, ...service[language] }));
@@ -163,6 +199,10 @@ export default function Home() {
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
+
+  useEffect(() => {
+    if (chatStep === 2) detailsOpenedAtRef.current = Date.now();
+  }, [chatStep]);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -202,10 +242,13 @@ export default function Home() {
     setSelectedIssue("");
     setFullName("");
     setCustomerPhone("");
+    setCustomerEmail("");
     setCustomerDistrict("");
     setFeeChoice("");
     setCustomerNote("");
     setFormError("");
+    setSpamTrap("");
+    setSendLocked(false);
   };
 
   const changeLanguage = (next: Language) => {
@@ -278,6 +321,7 @@ export default function Home() {
     `${t.chat.issue}: ${selectedIssue}`,
     `${t.chat.fullName}: ${fullName}`,
     `${t.chat.phoneNumber}: ${customerPhone}`,
+    customerEmail.trim() ? `${t.chat.email}: ${customerEmail.trim()}` : "",
     customerDistrict.trim() ? `${t.chat.address}: ${customerDistrict.trim()}` : "",
     `${t.chat.preference}: ${feeChoiceText}`,
     customerNote.trim() ? `${t.chat.customerNote}: ${customerNote.trim()}` : "",
@@ -286,13 +330,22 @@ export default function Home() {
 
   const submitCustomerDetails = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const digits = customerPhone.replace(/\D/g, "");
+    const now = Date.now();
+    if (spamTrap || (detailsOpenedAtRef.current > 0 && now - detailsOpenedAtRef.current < 800) || now - lastDetailsSubmitRef.current < 1200) {
+      setFormError(t.chat.spamError);
+      return;
+    }
+    lastDetailsSubmitRef.current = now;
     if (fullName.trim().length < 3) {
       setFormError(t.chat.nameError);
       return;
     }
-    if (digits.length < 10 || digits.length > 13) {
+    if (!isValidFlexiblePhone(customerPhone)) {
       setFormError(t.chat.phoneError);
+      return;
+    }
+    if (customerEmail.trim() && !isValidEmail(customerEmail)) {
+      setFormError(t.chat.emailError);
       return;
     }
     if (isOtherIssue && customerNote.trim().length < 3) {
@@ -301,6 +354,18 @@ export default function Home() {
     }
     setFormError("");
     setChatStep(3);
+  };
+
+  const openCustomerDetails = (issue: string) => {
+    setSelectedIssue(issue);
+    setFormError("");
+    setChatStep(2);
+  };
+
+  const lockWhatsAppSend = () => {
+    if (sendLocked) return;
+    setSendLocked(true);
+    window.setTimeout(() => setSendLocked(false), 8000);
   };
 
   const trustIcons = [Search, Wrench, ShieldCheck];
@@ -502,15 +567,17 @@ export default function Home() {
           <div className="chat-body" aria-live="polite">
             {chatStep === 0 && <div className="chat-stage"><div className="chat-bubble">{t.chat.hello}</div><div className="chat-options">{services.map((service) => { const Icon = service.icon; return <button key={service.id} type="button" onClick={() => { setSelectedService(service.id); setChatStep(1); }}><span><Icon aria-hidden="true" /></span><b>{service.tag}</b><i><ChevronRight aria-hidden="true" /></i></button>; })}</div></div>}
 
-            {chatStep === 1 && <div className="chat-stage"><button className="chat-back" type="button" onClick={() => setChatStep(0)}><ChevronLeft aria-hidden="true" /> {t.chat.backService}</button><div className="chat-bubble"><b>{selectedServiceData?.tag}</b><br />{t.chat.selectIssue}</div><div className="chat-options issue-options">{selectedServiceData?.issues.map((issue) => <button key={issue} type="button" onClick={() => { setSelectedIssue(issue); setChatStep(2); }}><span><Wrench aria-hidden="true" /></span><b>{issue}</b><i><ChevronRight aria-hidden="true" /></i></button>)}</div></div>}
+            {chatStep === 1 && <div className="chat-stage"><button className="chat-back" type="button" onClick={() => setChatStep(0)}><ChevronLeft aria-hidden="true" /> {t.chat.backService}</button><div className="chat-bubble"><b>{selectedServiceData?.tag}</b><br />{t.chat.selectIssue}</div><div className="chat-options issue-options">{selectedServiceData?.issues.map((issue) => <button key={issue} type="button" onClick={() => openCustomerDetails(issue)}><span><Wrench aria-hidden="true" /></span><b>{issue}</b><i><ChevronRight aria-hidden="true" /></i></button>)}</div></div>}
 
-            {chatStep === 2 && <form className="chat-stage chat-form" onSubmit={submitCustomerDetails}>
+            {chatStep === 2 && <form className="chat-stage chat-form" onSubmit={submitCustomerDetails} noValidate>
               <button className="chat-back" type="button" onClick={() => setChatStep(1)}><ChevronLeft aria-hidden="true" /> {t.chat.backIssue}</button>
               <div className="chat-bubble"><b>{selectedIssue}</b> {t.chat.createRecord}</div>
               {isOtherIssue && <label>{t.chat.otherNoteLabel}<textarea value={customerNote} maxLength={500} onChange={(event) => setCustomerNote(event.target.value)} placeholder={t.chat.otherNotePlaceholder} /></label>}
-              <label>{t.chat.fullName}<input value={fullName} onChange={(event) => setFullName(event.target.value)} autoComplete="name" placeholder={t.chat.fullNamePlaceholder} /></label>
-              <label>{t.chat.phoneNumber}<input value={customerPhone} onChange={(event) => setCustomerPhone(event.target.value)} autoComplete="tel" inputMode="tel" placeholder={t.chat.phonePlaceholder} /></label>
-              <label>{t.chat.address}<input value={customerDistrict} onChange={(event) => setCustomerDistrict(event.target.value)} autoComplete="street-address" placeholder={t.chat.addressPlaceholder} /></label>
+              <label>{t.chat.fullName}<input value={fullName} maxLength={80} onChange={(event) => setFullName(cleanSingleLine(event.target.value, 80))} autoComplete="name" placeholder={t.chat.fullNamePlaceholder} /></label>
+              <label>{t.chat.phoneNumber}<input value={customerPhone} maxLength={40} onChange={(event) => setCustomerPhone(cleanSingleLine(event.target.value, 40))} autoComplete="tel" inputMode="tel" placeholder={t.chat.phonePlaceholder} /><small className="chat-field-hint">{t.chat.phoneHint}</small></label>
+              <label>{t.chat.email}<input type="email" value={customerEmail} maxLength={254} onChange={(event) => setCustomerEmail(cleanEmailInput(event.target.value))} autoComplete="email" inputMode="email" placeholder={t.chat.emailPlaceholder} /></label>
+              <label>{t.chat.address}<input value={customerDistrict} maxLength={160} onChange={(event) => setCustomerDistrict(cleanSingleLine(event.target.value, 160))} autoComplete="street-address" placeholder={t.chat.addressPlaceholder} /></label>
+              <label className="chat-honeypot" aria-hidden="true">Website<input value={spamTrap} onChange={(event) => setSpamTrap(event.target.value)} autoComplete="off" tabIndex={-1} /></label>
               {formError && <p className="chat-error" role="alert">{formError}</p>}
               <button className="chat-next" type="submit">{t.chat.continue} <span><ChevronRight aria-hidden="true" /></span></button>
             </form>}
@@ -519,7 +586,7 @@ export default function Home() {
 
             {chatStep === 4 && <div className="chat-stage chat-form chat-note-stage"><button className="chat-back" type="button" onClick={() => setChatStep(3)}><ChevronLeft aria-hidden="true" /> {t.chat.backFee}</button><div className="chat-bubble"><NotebookPen aria-hidden="true" /> <span>{t.chat.notePrompt}</span></div><label>{t.chat.noteLabel}<textarea value={customerNote} maxLength={500} onChange={(event) => setCustomerNote(event.target.value)} placeholder={t.chat.notePlaceholder} /></label><p className="chat-media-hint"><span><ImagePlus aria-hidden="true" /><Video aria-hidden="true" /></span>{t.chat.mediaHint}</p><button className="chat-next" type="button" onClick={() => setChatStep(5)}>{customerNote.trim() ? t.chat.continue : t.chat.skip} <span><ChevronRight aria-hidden="true" /></span></button></div>}
 
-            {chatStep === 5 && <div className="chat-stage chat-summary"><button className="chat-back" type="button" onClick={() => setChatStep(4)}><ChevronLeft aria-hidden="true" /> {t.chat.changeNote}</button><div className="chat-bubble">{t.chat.summary}</div><dl><div><dt>{t.chat.service}</dt><dd>{selectedServiceData?.tag}</dd></div><div><dt>{t.chat.issue}</dt><dd>{selectedIssue}</dd></div><div><dt>{t.chat.fullName}</dt><dd>{fullName}</dd></div><div><dt>{t.chat.phoneNumber}</dt><dd>{customerPhone}</dd></div>{customerDistrict.trim() && <div><dt>{t.chat.address}</dt><dd>{customerDistrict}</dd></div>}<div><dt>{t.chat.preference}</dt><dd>{feeChoiceText}</dd></div><div><dt>{t.chat.customerNote}</dt><dd>{customerNote.trim() || t.chat.optionalNone}</dd></div></dl><p className="chat-note"><b>{language === "tr" ? "Not:" : "Note:"}</b> {t.chat.policy}</p><a className="chat-send" href={whatsappUrl(whatsappDraft)} target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" /> {t.chat.send} <span><ArrowUpRight aria-hidden="true" /></span></a><button className="chat-reset" type="button" onClick={resetChat}>{t.chat.newRequest}</button></div>}
+            {chatStep === 5 && <div className="chat-stage chat-summary"><button className="chat-back" type="button" onClick={() => setChatStep(4)}><ChevronLeft aria-hidden="true" /> {t.chat.changeNote}</button><div className="chat-bubble">{t.chat.summary}</div><dl><div><dt>{t.chat.service}</dt><dd>{selectedServiceData?.tag}</dd></div><div><dt>{t.chat.issue}</dt><dd>{selectedIssue}</dd></div><div><dt>{t.chat.fullName}</dt><dd>{fullName}</dd></div><div><dt>{t.chat.phoneNumber}</dt><dd>{customerPhone}</dd></div>{customerEmail.trim() && <div><dt>{t.chat.email}</dt><dd>{customerEmail}</dd></div>}{customerDistrict.trim() && <div><dt>{t.chat.address}</dt><dd>{customerDistrict}</dd></div>}<div><dt>{t.chat.preference}</dt><dd>{feeChoiceText}</dd></div><div><dt>{t.chat.customerNote}</dt><dd>{customerNote.trim() || t.chat.optionalNone}</dd></div></dl><p className="chat-note"><b>{language === "tr" ? "Not:" : "Note:"}</b> {t.chat.policy}</p><a className={`chat-send${sendLocked ? " locked" : ""}`} href={whatsappUrl(whatsappDraft)} target="_blank" rel="noopener noreferrer" aria-disabled={sendLocked} onClick={(event) => { if (sendLocked) { event.preventDefault(); return; } lockWhatsAppSend(); }}><FaWhatsapp aria-hidden="true" /> {sendLocked ? t.chat.sending : t.chat.send} <span><ArrowUpRight aria-hidden="true" /></span></a><button className="chat-reset" type="button" onClick={resetChat}>{t.chat.newRequest}</button></div>}
           </div>
         </div>
         <button className="chat-toggle" type="button" aria-label={t.chat.open} onClick={() => setChatOpen(!chatOpen)}><span className="wa-icon"><FaWhatsapp aria-hidden="true" /></span><b>WhatsApp</b><i /></button>
