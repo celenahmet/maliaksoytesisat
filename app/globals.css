@@ -354,46 +354,45 @@ footer { background: #eaf2fb; color: #071b36; padding: 70px 6vw 26px; border-top
   .error-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
 }
 
-footer { padding: 34px 4.5vw 18px; background: #fff; border-top: 1px solid #e4ebf4; }
-.footer-main { width: min(1440px, 100%); margin: 0 auto; grid-template-columns: minmax(320px, 1.15fr) minmax(320px, 1fr) minmax(300px, .9fr); gap: 0; }
-.footer-brand { max-width: none; padding: 4px 40px 10px 0; align-self: center; }
-.footer-identity { gap: 19px; }
-.footer-identity img { width: 66px; height: 66px; flex: 0 0 66px; border-radius: 15px; padding: 5px; box-shadow: 0 8px 20px rgba(6,47,104,.07); }
-.footer-identity strong { font: 650 clamp(22px, 1.6vw, 29px) var(--font-display); letter-spacing: .2px; }
-.footer-identity span { margin-top: 7px; color: #1264c7; font-size: 8px; letter-spacing: 4px; }
-.footer-identity i { display: block; width: 40px; height: 2px; margin-top: 14px; background: #2c7ef8; border-radius: 3px; }
-.footer-brand > p { max-width: 500px; margin-top: 17px; color: #67778a; font-size: 10px; font-weight: 400; line-height: 1.7; }
+footer { padding: 27px 4.5vw 14px; background: #fff; border-top: 1px solid #e4ebf4; }
+.footer-main { width: min(1380px, 100%); margin: 0 auto; grid-template-columns: minmax(330px, 1.08fr) minmax(290px, 1fr) minmax(280px, .9fr); gap: 0; align-items: start; }
+.footer-brand { max-width: none; padding: 0 36px 4px 0; align-self: start; }
+.footer-identity { min-height: 56px; gap: 15px; }
+.footer-identity img { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 13px; padding: 4px; box-shadow: 0 7px 17px rgba(6,47,104,.06); }
+.footer-identity strong { font: 700 clamp(19px, 1.25vw, 23px) var(--font-display); letter-spacing: .1px; }
+.footer-identity span { margin-top: 5px; color: #1264c7; font-size: 7px; letter-spacing: 3.5px; }
+.footer-identity i { display: block; width: 32px; height: 2px; margin-top: 10px; background: #2c7ef8; border-radius: 3px; }
+.footer-brand > p { max-width: 520px; margin-top: 13px; color: #66768a; font-size: 9.5px; font-weight: 400; line-height: 1.65; }
 
-.footer-services, .footer-contact { border-left: 1px solid #dfe7f0; padding: 2px 36px 6px; }
-.footer-title { min-height: 32px; margin-bottom: 8px; display: flex; align-items: center; gap: 0; }
+.footer-services, .footer-contact { border-left: 1px solid #e2e9f1; padding: 0 32px 4px; }
+.footer-title { min-height: 56px; margin-bottom: 4px; padding-top: 4px; display: flex; align-items: flex-start; gap: 0; box-sizing: border-box; }
 .footer-title > span { width: 44px; height: 44px; flex: 0 0 44px; display: grid; place-items: center; color: #2173e8; border: 1px solid #dbe8f8; border-radius: 12px; background: #f8fbff; box-shadow: 0 7px 18px rgba(26,100,207,.06); }
 .footer-title > span svg { width: 20px; height: 20px; stroke-width: 1.7; }
-.footer-title h3 { margin: 0; color: #102847; font: 700 16px var(--font-display); letter-spacing: -.2px; }
+.footer-title h3 { margin: 0; color: #102847; font: 700 18px var(--font-display); letter-spacing: -.25px; }
 .footer-title small { margin: 0; color: #2377ec; font: 900 9px var(--font-body); letter-spacing: 3px; }
 
-.footer-service-list { display: grid; }
-.footer-service-list a { min-height: 39px; display: flex; align-items: center; border-bottom: 1px solid #edf1f5; color: #40536a; font-size: 10px; font-weight: 550; transition: color .2s ease, transform .2s ease; }
-.footer-service-list a:last-child { border-bottom: 0; }
-.footer-service-list a:hover { color: #1d6fe8; transform: translateX(3px); }
+.footer-service-list { display: grid; gap: 8px; }
+.footer-service-list a { min-height: 0; padding: 4px 0; display: flex; align-items: center; border: 0; color: #40536a; font-size: 10px; font-weight: 550; }
+.footer-service-list a:hover { color: #1d6fe8; }
 .footer-service-list a > span, .footer-service-list a svg { display: none; }
 
 .footer-contact-list { display: grid; }
-.footer-contact-list > a, .footer-contact-list > div { min-height: 45px; margin: 0; display: grid; grid-template-columns: 31px 1fr; align-items: center; gap: 11px; color: #163252; }
-.footer-contact-list > a > span, .footer-contact-list > div > span { width: 29px; height: 29px; display: grid; place-items: center; color: #2475e8; border: 1px solid #e0e8f2; border-radius: 9px; background: #fbfdff; }
+.footer-contact-list > a, .footer-contact-list > div { min-height: 39px; margin: 0; display: grid; grid-template-columns: 29px 1fr; align-items: center; gap: 10px; color: #163252; }
+.footer-contact-list > a > span, .footer-contact-list > div > span { width: 27px; height: 27px; display: grid; place-items: center; color: #2475e8; border: 1px solid #e0e8f2; border-radius: 8px; background: #fbfdff; }
 .footer-contact-list svg { width: 15px; height: 15px; stroke-width: 1.75; }
-.footer-contact-list a, .footer-contact-list a[href^="mailto"] { margin: 0; color: #163252; font: 500 13px var(--font-display); }
+.footer-contact-list a, .footer-contact-list a[href^="mailto"] { margin: 0; color: #163252; font: 550 12px var(--font-display); }
 .footer-contact-list b { font-weight: 560; }
-.footer-contact-list address { margin: 0; color: #163252; font: 600 13px var(--font-display); }
-.footer-contact > p { margin: 8px 0 0; padding-top: 11px; border-top: 1px solid #e7ecf2; display: flex; align-items: center; gap: 9px; color: #66768a; font-size: 8px; line-height: 1.45; }
+.footer-contact-list address { margin: 0; color: #163252; font: 600 12px var(--font-display); }
+.footer-contact > p { margin: 6px 0 0; padding-top: 9px; border-top: 1px solid #e7ecf2; display: flex; align-items: center; gap: 8px; color: #66768a; font-size: 8px; line-height: 1.45; }
 .footer-contact > p svg { width: 16px; height: 16px; flex: 0 0 16px; color: #2475e8; stroke-width: 1.8; }
-.footer-bottom { width: min(1440px, 100%); margin: 25px auto 0; padding-top: 15px; }
+.footer-bottom { width: min(1380px, 100%); margin: 18px auto 0; padding-top: 12px; color: #111; font: 800 14px var(--font-display); }
 .footer-bottom a { left: 0; right: auto; }
 
 @media (max-width: 1050px) {
   .footer-main { grid-template-columns: 1fr 1fr; }
-  .footer-brand { grid-column: 1 / -1; padding: 0 0 30px; margin-bottom: 28px; border-bottom: 1px solid #dfe7f0; }
-  .footer-services { padding-left: 0; padding-right: 40px; border-left: 0; }
-  .footer-contact { padding-right: 0; padding-left: 40px; }
+  .footer-brand { grid-column: 1 / -1; padding: 0 0 20px; margin-bottom: 18px; border-bottom: 1px solid #e2e9f1; }
+  .footer-services { padding-left: 0; padding-right: 30px; border-left: 0; }
+  .footer-contact { padding-right: 0; padding-left: 30px; }
 }
 
 @media (max-width: 820px) {
@@ -404,17 +403,17 @@ footer { padding: 34px 4.5vw 18px; background: #fff; border-top: 1px solid #e4eb
   .ticker > .ticker-rail { gap: 0; animation-duration: 36s; }
   .ticker-group { gap: 25px; padding-right: 25px; }
   .ticker-group > span { gap: 25px; font-size: 10px; }
-  .footer-bottom { font-size: 12px; line-height: 1.5; }
-  footer { padding: 36px 20px 86px; }
+  .footer-bottom { margin-top: 12px; font-size: 12px; line-height: 1.5; }
+  footer { padding: 26px 20px 76px; }
   .footer-main { grid-template-columns: 1fr; }
-  .footer-brand { grid-column: auto; padding: 0 0 28px; margin-bottom: 25px; }
-  .footer-services, .footer-contact { padding: 0 0 28px; border-left: 0; }
-  .footer-services { border-bottom: 1px solid #dfe7f0; margin-bottom: 28px; }
-  .footer-identity { gap: 16px; }
-  .footer-identity img { width: 62px; height: 62px; flex-basis: 62px; border-radius: 14px; }
-  .footer-identity strong { font-size: clamp(21px, 6vw, 27px); }
-  .footer-brand > p { margin-top: 20px; font-size: 11px; }
-  .footer-title { margin-bottom: 10px; }
+  .footer-brand { grid-column: auto; padding: 0 0 19px; margin-bottom: 17px; }
+  .footer-services, .footer-contact { padding: 0 0 19px; border-left: 0; }
+  .footer-services { border-bottom: 1px solid #e2e9f1; margin-bottom: 17px; }
+  .footer-identity { gap: 14px; }
+  .footer-identity img { width: 54px; height: 54px; flex-basis: 54px; border-radius: 12px; }
+  .footer-identity strong { font-size: clamp(19px, 5.5vw, 23px); }
+  .footer-brand > p { margin-top: 14px; font-size: 10px; }
+  .footer-title { min-height: 42px; margin-bottom: 5px; }
   .chat-panel { width: min(374px, calc(100vw - 20px)); height: min(710px, calc(100dvh - 88px)); border-width: 3px; border-radius: 26px; }
   .chat-head { padding: 13px 14px; }
   .chat-phone-bar { padding-inline: 14px; }
