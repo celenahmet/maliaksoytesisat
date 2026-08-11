@@ -91,7 +91,7 @@ const copy = {
       ["İşi çözelim", "Planlanan zamanda özenli bakım veya onarım yapılsın."],
     ],
     localKicker: "ANKARA YERİNDE SERVİS", localTitle: "Sincan’dan Ankara geneline teknik destek.", localText: "Elektrik arıza tespitinden küçük ev aletlerine, kombi bakımından petek temizliği ve su tesisatına kadar Ankara içindeki servis taleplerini değerlendiriyoruz.", districts: ["Sincan", "Etimesgut", "Yenimahalle", "Keçiören", "Çankaya", "Mamak", "Pursaklar", "Gölbaşı"], faqTitle: "Sık sorulan sorular", faq: [["Hangi bölgelere servis veriyorsunuz?", "Sincan merkezli olarak Ankara genelindeki servis taleplerini değerlendiriyoruz. İlçe ve adres bilginizi WhatsApp üzerinden iletebilirsiniz."], ["Servis ücreti hangi durumda alınır?", "Arıza tespiti için servis ücreti uygulanır. Arıza tamiri tarafımızca garanti edilerek yapıldığında servis ücreti alınmaz."], ["Fiyat bilgisini nasıl alabilirim?", "Hizmet ve arıza türünü WhatsApp servis asistanından seçerek bilgilerinizi iletebilir, talebinize özel fiyat alabilirsiniz."], ["Fotoğraf veya video gönderebilir miyim?", "Evet. Servis talebini oluşturduktan sonra cihazın veya arızanın fotoğraf ve videolarını WhatsApp üzerinden gönderebilirsiniz."]],
-    contactKicker: "04 / İLETİŞİM", contactLead: "Sincan merkezli, Ankara geneli yerinde servis için ihtiyacınızı şimdi anlatın; hizmete özel fiyat bilgisi alın.", waQuote: "WHATSAPP’TAN FİYAT AL", phone: "TELEFON",
+    contactKicker: "04 / İLETİŞİM", contactLead: "Sincan merkezli, Ankara geneli yerinde servis için ihtiyacınızı şimdi anlatın; hizmete özel fiyat bilgisi alın.", waQuote: "WHATSAPP’TAN FİYAT AL", phone: "TELEFON", contactAreaKicker: "HİZMET BÖLGESİ", contactAreaTitle: "ANKARA GENELİ", contactAreaBase: "Sincan merkezli", contactHighlights: ["Yerinde servis", "Hızlı değerlendirme"],
     footerSlogan: "Eviniz için güvenilir teknik destek.", footerText: "Elektrik arıza tespiti, küçük ev aletleri, kombi, petek ve su tesisatı ihtiyaçlarınızda hızlı ve özenli çözüm. Sincan merkezli ekibimiz Ankara genelinde yerinde servis sağlar. Her işlemde açık iletişim ve kalıcı çözüm yaklaşımıyla çalışırız.", ourServices: "Hizmetlerimiz", contactUpper: "İLETİŞİM", serviceArea: "Ankara genelinde yerinde servis hizmeti.", rights: "Tüm Hakları Saklıdır.", backTop: "YUKARI DÖN",
     ticker: ["ELEKTRİK ARIZA TESPİTİ", "KÜÇÜK EV ALETLERİ", "KOMBİ BAKIMI", "PETEK TEMİZLİĞİ", "SU KAÇAĞI", "TIKANIKLIK AÇMA", "Hızlı teşhis, özenli işçilik, güvenilir servis"],
     a11y: { menu: "Erişilebilirlik", open: "Erişilebilirlik menüsünü aç", move: "Taşımak için sürükleyin", text: "Yazıyı Büyüt", contrast: "Kontrast", read: "Sesli Okuma", stopRead: "Okumayı Durdur", links: "Link Vurgula", cursor: "İmleç Büyüt", guide: "Okuma Çubuğu", images: "Görsel Gizle", reset: "Sıfırla" },
@@ -115,7 +115,7 @@ const copy = {
       ["Let us solve it", "Careful maintenance or repair is completed at the planned time."],
     ],
     localKicker: "ON-SITE SERVICE IN ANKARA", localTitle: "Technical support across Ankara from Sincan.", localText: "We evaluate service requests across Ankara for electrical fault detection, small appliances, boiler care, radiator cleaning and plumbing.", districts: ["Sincan", "Etimesgut", "Yenimahalle", "Keçiören", "Çankaya", "Mamak", "Pursaklar", "Gölbaşı"], faqTitle: "Frequently asked questions", faq: [["Which areas do you serve?", "Based in Sincan, we evaluate service requests throughout Ankara. You can send your district and address through WhatsApp."], ["When does a call-out fee apply?", "A call-out fee applies for fault diagnosis. It is waived when we complete the repair under our guarantee."], ["How can I request a quote?", "Choose the service and fault type in the WhatsApp service assistant, then send your details for a request-specific quote."], ["Can I send photos or video?", "Yes. After creating your request, you can send photos and videos of the appliance or fault through WhatsApp."]],
-    contactKicker: "04 / CONTACT", contactLead: "Tell us what you need and request a service-specific quote.", waQuote: "GET A WHATSAPP QUOTE", phone: "PHONE",
+    contactKicker: "04 / CONTACT", contactLead: "Tell us what you need and request a service-specific quote.", waQuote: "GET A WHATSAPP QUOTE", phone: "PHONE", contactAreaKicker: "SERVICE AREA", contactAreaTitle: "ALL ANKARA", contactAreaBase: "Based in Sincan", contactHighlights: ["On-site service", "Fast assessment"],
     footerSlogan: "Dependable technical support for your home.", footerText: "Fast and careful solutions for electrical fault detection, small appliances, boilers, radiators and plumbing. Our Sincan-based team provides on-site service throughout Ankara. We work with clear communication and a lasting-solution approach.", ourServices: "Our Services", contactUpper: "CONTACT", serviceArea: "On-site service throughout Ankara.", rights: "All Rights Reserved.", backTop: "BACK TO TOP",
     ticker: ["ELECTRICAL FAULT DETECTION", "SMALL APPLIANCES", "BOILER CARE", "RADIATOR CLEANING", "WATER LEAKS", "BLOCKAGE REMOVAL", "Fast diagnosis, careful workmanship, dependable service"],
     a11y: { menu: "Accessibility", open: "Open accessibility menu", move: "Drag to move", text: "Enlarge Text", contrast: "Contrast", read: "Read Aloud", stopRead: "Stop Reading", links: "Highlight Links", cursor: "Large Cursor", guide: "Reading Guide", images: "Hide Images", reset: "Reset" },
@@ -411,8 +411,16 @@ export default function Home() {
       </section>
 
       <section className="contact" id="iletisim">
-        <div className="contact-orbit" aria-hidden="true" /><span className="kicker light">{t.contactKicker}</span><h2>{t.heroA}<br/><em>{t.heroB}</em></h2><p>{t.contactLead}</p>
-        <div className="contact-actions"><button className="primary-button" type="button" onClick={() => { resetChat(); setChatOpen(true); }}>{t.waQuote} <b><ArrowUpRight aria-hidden="true" /></b></button><a className="contact-phone" href={`tel:+${PHONE_WA}`}><small>{t.phone}</small>{PHONE_DISPLAY}</a></div>
+        <div className="contact-copy">
+          <span className="kicker light">{t.contactKicker}</span>
+          <h2>{t.heroA}<br/><em>{t.heroB}</em></h2>
+          <p>{t.contactLead}</p>
+          <div className="contact-actions"><button className="primary-button" type="button" onClick={() => { resetChat(); setChatOpen(true); }}>{t.waQuote} <b><ArrowUpRight aria-hidden="true" /></b></button><a className="contact-phone" href={`tel:+${PHONE_WA}`}><small>{t.phone}</small>{PHONE_DISPLAY}</a></div>
+        </div>
+        <div className="contact-visual" aria-label={`${t.contactAreaTitle} — ${t.contactAreaBase}`}>
+          <div className="contact-radar" aria-hidden="true"><i /><i /><span><MapPin /><small>{t.contactAreaKicker}</small><strong>{t.contactAreaTitle}</strong><em>{t.contactAreaBase}</em></span></div>
+          <div className="contact-highlights">{t.contactHighlights.map((item) => <span key={item}><Check aria-hidden="true" />{item}</span>)}</div>
+        </div>
       </section>
 
       <footer>
