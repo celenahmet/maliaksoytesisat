@@ -22,9 +22,7 @@ import {
   ImageOff,
   Info,
   Mail,
-  Maximize2,
   MessageSquareText,
-  Minimize2,
   NotebookPen,
   MapPin,
   MousePointer2,
@@ -178,7 +176,6 @@ export default function Home() {
   const [spamTrap, setSpamTrap] = useState("");
   const [sendLocked, setSendLocked] = useState(false);
   const [chatLayout, setChatLayout] = useState<"compact" | "vertical">("compact");
-  const [chatSettingsOpen, setChatSettingsOpen] = useState(false);
   const [a11yOpen, setA11yOpen] = useState(false);
   const [a11yPosition, setA11yPosition] = useState({ x: 0, y: 420 });
   const [a11yOptions, setA11yOptions] = useState({ text: false, contrast: false, links: false, cursor: false, guide: false, images: false });
@@ -560,11 +557,17 @@ export default function Home() {
             <div className="chat-avatar"><img src="/assets/logo/logo-128.webp" alt="" width="128" height="128" loading="lazy" decoding="async" /><span /></div>
             <div className="chat-head-copy"><strong>{t.chat.assistant}</strong><small><i /> {t.chat.online} · {t.chat.step} {chatStep + 1}/{totalChatSteps}</small></div>
             <div className="chat-head-actions">
-              <button type="button" className={chatSettingsOpen ? "active" : ""} onClick={() => setChatSettingsOpen(!chatSettingsOpen)} aria-label={t.chat.settings} aria-expanded={chatSettingsOpen}><Settings2 aria-hidden="true" /></button>
-              <button type="button" onClick={() => { setChatOpen(false); setChatSettingsOpen(false); }} aria-label={t.chat.close}><X aria-hidden="true" /></button>
+              <button
+                type="button"
+                className={chatLayout === "vertical" ? "active" : ""}
+                onClick={() => setChatLayout((currentLayout) => currentLayout === "compact" ? "vertical" : "compact")}
+                aria-label={`${t.chat.settings}: ${chatLayout === "compact" ? t.chat.verticalView : t.chat.compactView}`}
+                aria-pressed={chatLayout === "vertical"}
+                title={chatLayout === "compact" ? t.chat.verticalView : t.chat.compactView}
+              ><Settings2 aria-hidden="true" /></button>
+              <button type="button" onClick={() => setChatOpen(false)} aria-label={t.chat.close}><X aria-hidden="true" /></button>
             </div>
           </div>
-          {chatSettingsOpen && <div className="chat-layout-menu"><button type="button" className={chatLayout === "compact" ? "active" : ""} onClick={() => { setChatLayout("compact"); setChatSettingsOpen(false); }}><Minimize2 aria-hidden="true" /> {t.chat.compactView}</button><button type="button" className={chatLayout === "vertical" ? "active" : ""} onClick={() => { setChatLayout("vertical"); setChatSettingsOpen(false); }}><Maximize2 aria-hidden="true" /> {t.chat.verticalView}</button></div>}
           <div className="chat-progress" aria-hidden="true"><span style={{ width: `${((chatStep + 1) / totalChatSteps) * 100}%` }} /></div>
           <div className="chat-phone-bar"><PhoneCall aria-hidden="true" /><span>{t.chat.callUs}</span><a href={`tel:+${PHONE_WA}`}>{PHONE_DISPLAY}</a></div>
           <div className="chat-body" aria-live="polite">

@@ -474,10 +474,6 @@ footer { padding: 27px 4.5vw 14px; background: #fff; border-top: 1px solid #e4eb
 .chat-head-actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
 .chat-head .chat-head-actions button { width: 32px; height: 32px; margin-left: 0; }
 .chat-head .chat-head-actions button.active { color: #56e190; background: rgba(255,255,255,.12); }
-.chat-layout-menu { position: absolute; z-index: 8; top: 61px; right: 12px; width: 150px; padding: 6px; display: grid; gap: 3px; border: 1px solid #d1ded7; border-radius: 12px; background: #fff; box-shadow: 0 14px 35px rgba(4,36,23,.18); }
-.chat-layout-menu button { min-height: 38px; padding: 0 10px; display: flex; align-items: center; gap: 9px; border: 0; border-radius: 8px; background: transparent; color: #466357; font-size: 9px; font-weight: 800; cursor: pointer; text-align: left; }
-.chat-layout-menu button:hover, .chat-layout-menu button.active { color: #117340; background: #e8f6ee; }
-.chat-layout-menu svg { width: 15px; height: 15px; stroke-width: 1.8; }
 .chat-body { background: linear-gradient(180deg, #f0f5f2 0%, #e8f0ec 100%); }
 .chat-bubble { border: 1px solid rgba(23, 90, 58, .06); box-shadow: 0 3px 12px rgba(15, 69, 43, .06); }
 .chat-widget:not(.engaged).layout-compact .chat-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
