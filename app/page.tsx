@@ -5,7 +5,6 @@
 
 import { type FormEvent, type PointerEvent as ReactPointerEvent, useEffect, useRef, useState } from "react";
 import {
-  Accessibility,
   ArrowDown,
   ArrowUp,
   ArrowUpRight,
@@ -37,6 +36,7 @@ import {
   Rows3,
   Search,
   Settings2,
+  SlidersHorizontal,
   ShieldCheck,
   Video,
   Volume2,
@@ -534,7 +534,7 @@ export default function Home() {
             setA11yOpen(!a11yOpen);
           }}
         >
-          <Accessibility aria-hidden="true" />
+          <SlidersHorizontal aria-hidden="true" />
           <GripVertical className="a11y-grip" aria-hidden="true" />
         </button>
         {a11yOpen && <section className="a11y-panel" role="dialog" aria-label={t.a11y.menu}>
