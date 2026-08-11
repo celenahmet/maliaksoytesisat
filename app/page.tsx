@@ -54,23 +54,23 @@ type Language = "tr" | "en";
 const serviceCatalog = [
   {
     id: "electrical-diagnostics", slug: "elektrik-ariza-tespit", no: "01", image: "/assets/cards/01.webp", width: 1536, height: 1024, icon: Search,
-    tr: { tag: "ELEKTRİK", title: "Elektrik Arıza Tespit", text: "Sigorta, priz, anahtar, aydınlatma ve elektrik hattı arızalarında doğru tespit.", issues: ["Sigorta atması", "Priz veya anahtar arızası", "Aydınlatma arızası", "Diğer elektrik arızası"] },
-    en: { tag: "ELECTRICAL", title: "Electrical Fault Detection", text: "Accurate diagnosis for fuse, socket, switch, lighting and electrical line faults.", issues: ["Tripping fuse", "Socket or switch fault", "Lighting fault", "Other electrical fault"] },
+    tr: { tag: "ELEKTRİK", title: "Elektrik Arıza Tespit", text: "Sigorta, priz, anahtar ve aydınlatma arızalarında doğru tespit.", issues: ["Sigorta atması", "Priz veya anahtar arızası", "Aydınlatma arızası", "Diğer elektrik arızası"] },
+    en: { tag: "ELECTRICAL", title: "Electrical Fault Detection", text: "Accurate diagnosis for fuse, socket, switch and lighting faults.", issues: ["Tripping fuse", "Socket or switch fault", "Lighting fault", "Other electrical fault"] },
   },
   {
     id: "small-appliances", slug: "kucuk-ev-aletleri-tamiri", no: "02", image: "/assets/cards/02.webp", width: 1536, height: 1024, icon: Coffee,
-    tr: { tag: "KÜÇÜK EV ALETLERİ", title: "Küçük Ev Aletleri Bakım & Tamir", text: "Kahve makinesi, süpürge, ütü ve mutfak yardımcılarında teknik servis.", issues: ["Kahve makinesi", "Elektrikli süpürge", "Ütü", "Diğer küçük ev aleti"] },
-    en: { tag: "SMALL APPLIANCES", title: "Small Appliance Care & Repair", text: "Technical service for coffee machines, vacuum cleaners, irons and kitchen appliances.", issues: ["Coffee machine", "Vacuum cleaner", "Iron", "Other small appliance"] },
+    tr: { tag: "KÜÇÜK EV ALETLERİ", title: "Küçük Ev Aletleri Bakım & Tamir", text: "Kahve makinesi, süpürge, ütü ve mutfak yardımcılarında bakım ve onarım.", issues: ["Kahve makinesi", "Elektrikli süpürge", "Ütü", "Diğer küçük ev aleti"] },
+    en: { tag: "SMALL APPLIANCES", title: "Small Appliance Care & Repair", text: "Care and repair for coffee machines, vacuums, irons and kitchen appliances.", issues: ["Coffee machine", "Vacuum cleaner", "Iron", "Other small appliance"] },
   },
   {
     id: "boiler-radiator", slug: "kombi-bakimi-petek-temizligi", no: "03", image: "/assets/cards/03.webp", width: 1254, height: 1254, icon: Flame,
-    tr: { tag: "KOMBİ & PETEK", title: "Kombi & Petek Temizlik & Bakım", text: "Kombi bakımı ve petek temizliğiyle verimli, güvenli ve dengeli ısınma.", issues: ["Kombi arızası", "Kombi bakımı", "Petek temizliği", "Isınma problemi"] },
-    en: { tag: "BOILER & RADIATOR", title: "Boiler & Radiator Care", text: "Efficient, safe and balanced heating with boiler care and radiator cleaning.", issues: ["Boiler fault", "Boiler maintenance", "Radiator cleaning", "Heating problem"] },
+    tr: { tag: "KOMBİ & PETEK", title: "Kombi & Petek Temizlik & Bakım", text: "Kombi bakımı ve petek temizliğiyle güvenli, dengeli ısınma.", issues: ["Kombi arızası", "Kombi bakımı", "Petek temizliği", "Isınma problemi"] },
+    en: { tag: "BOILER & RADIATOR", title: "Boiler & Radiator Care", text: "Safe, balanced heating with boiler care and radiator cleaning.", issues: ["Boiler fault", "Boiler maintenance", "Radiator cleaning", "Heating problem"] },
   },
   {
     id: "plumbing", slug: "su-tesisati-tamiri", no: "04", image: "/assets/cards/04.webp", width: 1402, height: 1122, icon: Droplets,
-    tr: { tag: "SU TESİSATI", title: "Su Tesisatı Tamir & Bakım", text: "Su kaçağı, tıkanıklık, armatür değişimi ve tesisat bakımında yerinde çözüm.", issues: ["Su kaçağı", "Tıkanıklık", "Armatür değişimi", "Tesisat tamir ve bakım"] },
-    en: { tag: "PLUMBING", title: "Plumbing Repair & Care", text: "On-site solutions for leaks, blockages, fixture replacement and plumbing care.", issues: ["Water leak", "Blockage", "Fixture replacement", "Plumbing repair and care"] },
+    tr: { tag: "SU TESİSATI", title: "Su Tesisatı Tamir & Bakım", text: "Su kaçağı, tıkanıklık ve armatür işlerinde yerinde çözüm.", issues: ["Su kaçağı", "Tıkanıklık", "Armatür değişimi", "Tesisat tamir ve bakım"] },
+    en: { tag: "PLUMBING", title: "Plumbing Repair & Care", text: "On-site solutions for leaks, blockages and fixture work.", issues: ["Water leak", "Blockage", "Fixture replacement", "Plumbing repair and care"] },
   },
 ] as const;
 
@@ -373,8 +373,11 @@ export default function Home() {
             <article className={`service-card ${activeService === index ? "active" : ""}`} key={service.id} onMouseEnter={() => setActiveService(index)}>
               <img className="service-bg" src={service.image.replace(".webp", "-480.webp")} srcSet={`${service.image.replace(".webp", "-480.webp")} 480w, ${service.image.replace(".webp", "-960.webp")} 960w, ${service.image} ${service.width}w`} sizes="(max-width: 820px) calc(100vw - 40px), (max-width: 1050px) 46vw, 24vw" alt="" width={service.width} height={service.height} loading="lazy" decoding="async" />
               <div className="card-top"><span>{service.no}</span><i>{service.tag}</i></div>
-              <h3><a href={`/hizmetler/${service.slug}`}>{service.title}</a></h3><p>{service.text}</p>
-              <button type="button" onClick={() => requestQuote(service.id)}>{t.quote} <span><ArrowUpRight aria-hidden="true" /></span></button>
+              <div className="card-content">
+                <h3><a href={`/hizmetler/${service.slug}`}>{service.title}</a></h3>
+                <p>{service.text}</p>
+                <button type="button" onClick={() => requestQuote(service.id)}>{t.quote} <span><ArrowUpRight aria-hidden="true" /></span></button>
+              </div>
             </article>
           ))}
         </div>
