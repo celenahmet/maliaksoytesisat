@@ -79,7 +79,7 @@ const copy = {
     locale: "Türkçe", navLabel: "Ana menü", home: "Anasayfa", services: "Hizmetler", assurance: "Çalışma ve Güvence", contact: "İletişim", technicalService: "TEKNİK SERVİS", menu: "Menüyü aç veya kapat",
     professional: "PROFESYONEL HİZMET", heroA: "Arızanız beklemez.", heroB: "Biz de.", heroLead: "Sincan merkezli ekibimizle Ankara genelinde; elektrik arıza tespitinden kombiye, su tesisatından petek bakımına hızlı teşhis ve özenli çalışma.", quote: "FİYAT AL", viewServices: "HİZMETLERİ İNCELE",
     micro: ["Uzman teknik servis", "Garantili hizmet", "Hızlı çözüm", "Güvenilir destek"], available: "Ulaşılabilir servis", writeWa: "WhatsApp’tan yazın",
-    servicesKicker: "01 / HİZMETLER", servicesTitleA: "İhtiyacınız için", servicesTitleB: "doğru çözüm.", servicesLead: "Evde aksayan teknik işlerinizi ertelemeyin. İhtiyacınızı seçin, hızlıca fiyat alın.",
+    servicesKicker: "01 / HİZMETLER", servicesTitleA: "İhtiyacınız için", servicesTitleB: "doğru çözüm.", servicesLeadKicker: "HIZLI VE NET SERVİS", servicesLead: "İhtiyacınızı seçin; arızayı birlikte değerlendirelim ve uygun hizmet için hızlıca fiyat bilgisi paylaşalım.",
     assuranceKicker: "02 / GÜVENCE", assuranceTitleA: "Güveniniz", assuranceTitleB: "bizim için önemli.", trust: [
       ["Servis Ücreti Var (Şartlı)", "Yerinde kontrol ve arıza tespiti için servis ücreti uygulanabilir."],
       ["Tamir Yapılırsa", "Arıza tarafımızca garanti kapsamında onarılırsa servis ücreti alınmaz."],
@@ -103,7 +103,7 @@ const copy = {
     locale: "English", navLabel: "Main navigation", home: "Home", services: "Services", assurance: "Process & Assurance", contact: "Contact", technicalService: "TECHNICAL SERVICE", menu: "Open or close menu",
     professional: "PROFESSIONAL SERVICE", heroA: "Your repair can’t wait.", heroB: "Neither do we.", heroLead: "Fast diagnosis and careful workmanship for electrical faults, boilers, radiators and plumbing throughout your home.", quote: "GET A QUOTE", viewServices: "VIEW SERVICES",
     micro: ["Expert technical service", "Guaranteed service", "Fast solutions", "Dependable support"], available: "Service available", writeWa: "Message us on WhatsApp",
-    servicesKicker: "01 / SERVICES", servicesTitleA: "The right solution", servicesTitleB: "for your needs.", servicesLead: "Do not postpone technical issues at home. Choose what you need and request a quote quickly.",
+    servicesKicker: "01 / SERVICES", servicesTitleA: "The right solution", servicesTitleB: "for your needs.", servicesLeadKicker: "FAST, CLEAR SERVICE", servicesLead: "Choose what you need; we will assess the issue together and quickly provide information for the right service.",
     assuranceKicker: "02 / ASSURANCE", assuranceTitleA: "Your trust", assuranceTitleB: "matters to us.", trust: [
       ["Conditional Call-out Fee", "A service fee may apply for on-site inspection and fault diagnosis."],
       ["When We Repair It", "No call-out fee is charged when we complete the repair under our guarantee."],
@@ -432,7 +432,10 @@ export default function Home() {
       </div>
 
       <section className="services section" id="hizmetler">
-        <div className="section-head"><div><span className="kicker">{t.servicesKicker}</span><h2>{t.servicesTitleA}<br/><em>{t.servicesTitleB}</em></h2></div><p>{t.servicesLead}</p></div>
+        <div className="section-head services-head">
+          <div><span className="kicker">{t.servicesKicker}</span><h2>{t.servicesTitleA}<br/><em>{t.servicesTitleB}</em></h2></div>
+          <div className="section-support"><span><CircleDot aria-hidden="true" />{t.servicesLeadKicker}</span><p>{t.servicesLead}</p></div>
+        </div>
         <div className="service-grid">
           {services.map((service, index) => (
             <article className={`service-card ${activeService === index ? "active" : ""}`} key={service.id} onMouseEnter={() => setActiveService(index)}>
