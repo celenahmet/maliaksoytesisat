@@ -1,35 +1,83 @@
-import type { Metadata } from "next";
-import { Manrope, Space_Grotesk } from "next/font/google";
-import { headers } from "next/headers";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { SITE_URL } from "./site";
 
-const manrope = Manrope({ variable: "--font-body", subsets: ["latin", "latin-ext"] });
-const spaceGrotesk = Space_Grotesk({ variable: "--font-display", subsets: ["latin", "latin-ext"] });
+const title = "Ankara Teknik Servis | M. Ali Aksoy – Sincan";
+const description = "Ankara Sincan merkezli teknik servis. Elektronik, küçük ev aletleri, kombi ve petek bakımı ile su tesisatı için Ankara genelinde yerinde hizmet.";
 
-const title = "UstaFix | Teknik Servis, Bakım ve Tesisat";
-const description = "Küçük ev aletleri, kombi ve petek bakımı, su tesisatı ve teknik tamir işleri için hızlıca fiyat alın.";
-
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const base = new URL(`${protocol}://${host}`);
-  const socialImage = new URL("/og.png", base).toString();
-
-  return {
-    metadataBase: base,
+export const metadata: Metadata = {
+    metadataBase: new URL(SITE_URL),
     title,
     description,
-    icons: { icon: "/assets/logo/logo.png", shortcut: "/assets/logo/logo.png" },
-    openGraph: { title, description, type: "website", locale: "tr_TR", images: [{ url: socialImage, width: 1733, height: 908, alt: "UstaFix teknik servis" }] },
-    twitter: { card: "summary_large_image", title, description, images: [socialImage] },
-  };
-}
+    applicationName: "M. Ali Aksoy Teknik Servis",
+    category: "Teknik Servis",
+    authors: [{ name: "M. Ali Aksoy" }],
+    creator: "M. Ali Aksoy Teknik Servis",
+    publisher: "M. Ali Aksoy Teknik Servis",
+    manifest: "/site.webmanifest",
+    formatDetection: { email: false, address: false, telephone: false },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+    },
+    icons: { icon: "/assets/logo/mali-kare-logo-192.webp", shortcut: "/favicon.ico", apple: "/assets/logo/mali-kare-logo-192.webp" },
+    openGraph: { title, description, url: `${SITE_URL}/`, siteName: "M. Ali Aksoy Teknik Servis", type: "website", locale: "tr_TR", images: [{ url: `${SITE_URL}/og.webp`, width: 1732, height: 908, alt: "M. Ali Aksoy Ankara teknik servis hizmetleri" }] },
+    twitter: { card: "summary_large_image", title, description, images: [`${SITE_URL}/og.webp`] },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#062f68",
+  colorScheme: "light",
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": `${SITE_URL}/#business`,
+        name: "M. Ali Aksoy Teknik Servis",
+        description,
+        url: `${SITE_URL}/`,
+        logo: `${SITE_URL}/assets/logo/mali-kare-logo-192.webp`,
+        image: `${SITE_URL}/og.webp`,
+        telephone: "+90 531 839 06 68",
+        email: "bilgi@maliaksoy.com",
+        address: { "@type": "PostalAddress", addressLocality: "Sincan", addressRegion: "Ankara", addressCountry: "TR" },
+        areaServed: { "@type": "AdministrativeArea", name: "Ankara" },
+        contactPoint: { "@type": "ContactPoint", telephone: "+90 531 839 06 68", contactType: "customer service", areaServed: "TR", availableLanguage: ["Turkish", "English"] },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Teknik Servis Hizmetleri",
+          itemListElement: [
+            "Elektronik Arıza ve Tamir",
+            "Küçük Ev Aletleri Bakım ve Tamir",
+            "Kombi ve Petek Temizlik ve Bakım",
+            "Su Tesisatı Tamir ve Bakım",
+          ].map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name, areaServed: "Ankara" } })),
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        url: `${SITE_URL}/`,
+        name: "M. Ali Aksoy Teknik Servis",
+        inLanguage: "tr-TR",
+        publisher: { "@id": `${SITE_URL}/#business` },
+      },
+    ],
+  };
+
   return (
     <html lang="tr">
-      <body className={`${manrope.variable} ${spaceGrotesk.variable}`}>{children}</body>
+      <body>
+        {children}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
+      </body>
     </html>
   );
 }
