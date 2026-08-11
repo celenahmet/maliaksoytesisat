@@ -3,7 +3,7 @@ import "./globals.css";
 import { SITE_URL } from "./site";
 
 const title = "Ankara Teknik Servis | M. Ali Aksoy – Sincan";
-const description = "Ankara Sincan merkezli teknik servis. Elektronik, küçük ev aletleri, kombi ve petek bakımı ile su tesisatı için Ankara genelinde yerinde hizmet.";
+const description = "Ankara Sincan merkezli teknik servis. Elektrik arıza tespiti, küçük ev aletleri, kombi ve petek bakımı ile su tesisatı için Ankara genelinde yerinde hizmet.";
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           "@type": "OfferCatalog",
           name: "Teknik Servis Hizmetleri",
           itemListElement: [
-            "Elektronik Arıza ve Tamir",
+            "Elektrik Arıza Tespit",
             "Küçük Ev Aletleri Bakım ve Tamir",
             "Kombi ve Petek Temizlik ve Bakım",
             "Su Tesisatı Tamir ve Bakım",

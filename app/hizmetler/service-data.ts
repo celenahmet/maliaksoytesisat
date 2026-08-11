@@ -17,20 +17,20 @@ export type ServicePageData = {
 
 export const servicePages: ServicePageData[] = [
   {
-    slug: "elektronik-tamir",
-    title: "Ankara Elektronik Arıza ve Tamir Servisi",
-    shortTitle: "Elektronik Arıza ve Tamir",
-    metaTitle: "Ankara Elektronik Tamir Servisi | M. Ali Aksoy",
-    description: "Ankara genelinde televizyon, uydu alıcısı ve ses sistemi arızaları için elektronik tamir servisi. Sincan merkezli servis için fiyat alın.",
-    eyebrow: "ELEKTRONİK TEKNİK SERVİS",
-    intro: "Televizyon, uydu alıcısı ve ses sistemlerindeki arızaları doğru tespit ederek uygulanabilir onarım seçeneklerini paylaşıyoruz. Sincan merkezli olarak Ankara içindeki servis taleplerini değerlendiriyoruz.",
+    slug: "elektrik-ariza-tespit",
+    title: "Ankara Elektrik Arıza Tespit Servisi",
+    shortTitle: "Elektrik Arıza Tespit",
+    metaTitle: "Ankara Elektrik Arıza Tespit | M. Ali Aksoy",
+    description: "Ankara genelinde sigorta atması, priz, anahtar, aydınlatma ve elektrik hattı arızaları için yerinde arıza tespiti. Sincan merkezli servis.",
+    eyebrow: "ELEKTRİK ARIZA TESPİTİ",
+    intro: "Sigorta atması, çalışmayan priz veya anahtar, aydınlatma sorunu ve elektrik hattındaki düzensizliklerde arızanın kaynağını doğru belirlemeye odaklanıyoruz. Sincan merkezli olarak Ankara içindeki yerinde servis taleplerini değerlendiriyoruz.",
     image: "/assets/cards/01.webp",
     imageWidth: 1536,
     imageHeight: 1024,
-    imageAlt: "Ankara elektronik arıza ve tamir servisi",
-    services: ["Televizyon arıza tespiti ve tamiri", "Uydu alıcısı kontrolü ve onarımı", "Ses sistemi arıza tespiti", "Elektronik cihaz bakım ve kontrolü"],
-    signs: ["Cihazın açılmaması veya kendiliğinden kapanması", "Görüntü ya da ses kesintileri", "Bağlantı ve sinyal problemleri", "Normal dışı ses, ısınma veya çalışma düzensizliği"],
-    faq: [["Elektronik cihazı servis öncesinde nasıl anlatmalıyım?", "Cihazın marka ve modelini, arızanın ne zaman başladığını ve görülen belirtisini yazmanız ilk değerlendirmeyi kolaylaştırır."], ["Televizyon ve ses sistemi için servis veriliyor mu?", "Evet. Televizyon, uydu alıcısı ve ses sistemleri başlıca elektronik servis alanlarımız arasındadır."], ["Arıza fotoğrafı veya videosu gönderebilir miyim?", "Evet. WhatsApp servis kaydından sonra cihazın çalışmasını gösteren fotoğraf veya videoyu iletebilirsiniz."], ["Servis ücreti nasıl uygulanır?", "Arıza tespiti için servis ücreti uygulanır. Arıza tarafımızca garanti edilerek tamir edildiğinde servis ücreti alınmaz."]],
+    imageAlt: "Ankara elektrik arıza tespit servisi",
+    services: ["Sigorta ve kaçak akım kontrolü", "Priz ve anahtar arıza tespiti", "Aydınlatma arızası kontrolü", "Elektrik hattı ve bağlantı kontrolü"],
+    signs: ["Sigortanın sık sık atması", "Priz veya anahtarın çalışmaması", "Aydınlatmada kesinti ya da titreme", "Yanık kokusu, ısınma veya düzensiz elektrik"],
+    faq: [["Elektrik arızasını servis öncesinde nasıl anlatmalıyım?", "Arızanın bulunduğu alanı, ne zaman başladığını ve sigorta atması gibi belirtileri yazmanız ilk değerlendirmeyi kolaylaştırır."], ["Priz ve aydınlatma arızaları için servis veriliyor mu?", "Evet. Priz, anahtar, aydınlatma ve elektrik hattıyla ilgili arıza tespit talepleri değerlendirilmektedir."], ["Arıza fotoğrafı veya videosu gönderebilir miyim?", "Evet. Risk oluşturmadan uzaktan çekebildiğiniz fotoğraf veya videoyu WhatsApp servis kaydından sonra iletebilirsiniz."], ["Servis ücreti nasıl uygulanır?", "Arıza tespiti için servis ücreti uygulanır. Arıza tarafımızca garanti edilerek tamir edildiğinde servis ücreti alınmaz."]],
   },
   {
     slug: "kucuk-ev-aletleri-tamiri",
@@ -83,8 +83,11 @@ export const servicePages: ServicePageData[] = [
 ];
 
 export const legacyServiceSlugs: Record<string, string> = {
-  elektronik: "elektronik-tamir",
-  "elektronik-ariza-tamiri": "elektronik-tamir",
+  elektrik: "elektrik-ariza-tespit",
+  "elektrik-ariza-tespiti": "elektrik-ariza-tespit",
+  elektronik: "elektrik-ariza-tespit",
+  "elektronik-tamir": "elektrik-ariza-tespit",
+  "elektronik-ariza-tamiri": "elektrik-ariza-tespit",
   "kucuk-ev-aletleri": "kucuk-ev-aletleri-tamiri",
   "kucuk-ev-aletleri-servisi": "kucuk-ev-aletleri-tamiri",
   "kombi-bakimi": "kombi-bakimi-petek-temizligi",

@@ -17,7 +17,7 @@ export default async function LegacyRedirectPage({ params }: { params: Promise<{
   const sectionTarget = sectionRedirects[legacy];
   if (sectionTarget) permanentRedirect(sectionTarget);
 
-  const serviceTarget = legacyServiceSlugs[legacy] ?? (legacy === "elektronik-tamir" || legacy === "kucuk-ev-aletleri-tamiri" || legacy === "kombi-bakimi-petek-temizligi" || legacy === "su-tesisati-tamiri" ? legacy : undefined);
+  const serviceTarget = legacyServiceSlugs[legacy] ?? (legacy === "elektrik-ariza-tespit" || legacy === "kucuk-ev-aletleri-tamiri" || legacy === "kombi-bakimi-petek-temizligi" || legacy === "su-tesisati-tamiri" ? legacy : undefined);
   if (serviceTarget) permanentRedirect(`/hizmetler/${serviceTarget}`);
 
   notFound();
