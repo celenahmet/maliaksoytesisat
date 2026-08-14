@@ -162,7 +162,7 @@ footer { background: #eaf2fb; color: #071b36; padding: 70px 6vw 26px; border-top
 .footer-brand { max-width: 460px; }.footer-identity { display: flex; align-items: flex-start; gap: 14px; }.footer-identity img { width: 96px; height: 96px; border: none; border-radius: 0; object-fit: contain; transform: none; background: transparent; box-shadow: none; padding: 0; }.footer-identity div { display: flex; flex-direction: column; margin-top: 4px; }.footer-identity strong { font: 700 19px var(--font-display); }.footer-identity span { color: #5d6c80; font-size: 12px; font-weight: 500; letter-spacing: 0; margin-top: 3px; }.footer-brand > p { color: #5d6c80; font-size: 13px; line-height: 1.8; margin: 22px 0 0; max-width: 430px; }.footer-brand > p b { color: #071b36; }
 .footer-services { display: flex; flex-direction: column; gap: 11px; }.footer-services h3 { color: #071b36; font: 650 15px var(--font-display); margin: 0 0 9px; }.footer-services a { color: #52657a; font-size: 10px; transition: color .2s ease, transform .2s ease; }.footer-services a:hover { color: #1d6fe8; transform: translateX(3px); }
 .footer-contact { display: flex; flex-direction: column; }.footer-contact small { color: #1d6fe8; font-size: 8px; font-weight: 900; letter-spacing: 2px; margin-bottom: 17px; }.footer-contact a { color: #071b36; font: 600 15px var(--font-display); margin-bottom: 10px; }.footer-contact a[href^="mailto"] { font: 500 11px var(--font-body); color: #52657a; }.footer-contact address { color: #071b36; font: 700 11px var(--font-body); margin-top: 13px; }.footer-contact p { color: #52657a; font-size: 10px; line-height: 1.6; margin: 7px 0 0; }
-.footer-bottom { display: flex; justify-content: center; position: relative; border-top: 1px solid #cadbeb; padding-top: 22px; margin-top: 55px; color: #61758a; font-size: 9px; letter-spacing: 1px; text-align: center; }.footer-bottom a { position: absolute; right: 0; color: #315d91; font-weight: 800; display: inline-flex; align-items: center; gap: 6px; }.footer-bottom a svg { width: 12px; height: 12px; stroke-width: 1.8; }
+.footer-bottom { display: flex; justify-content: center; position: relative; border-top: 1px solid #cadbeb; padding-top: 22px; margin-top: 55px; color: #66768a; font-size: 11px; font-weight: 500; font-family: var(--font-body); letter-spacing: .2px; text-align: center; }.footer-bottom a { position: absolute; right: 0; color: #315d91; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }.footer-bottom a svg { width: 12px; height: 12px; stroke-width: 1.8; }
 
 .chat-widget { position: fixed; right: 24px; bottom: 24px; z-index: 80; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }.chat-toggle { border: 1px solid rgba(255,255,255,.3); border-radius: 100px; min-height: 58px; padding: 7px 17px 7px 8px; background: #22c563; color: white; display: flex; align-items: center; gap: 9px; cursor: pointer; box-shadow: 0 12px 32px rgba(9,91,43,.27), inset 0 1px 0 rgba(255,255,255,.3); position: relative; }.wa-icon { width: 43px; height: 43px; border-radius: 50%; background: white; color: #199d4d; display: grid; place-items: center; }.wa-icon svg { width: 23px; height: 23px; stroke-width: 1.8; }.chat-toggle b { font-size: 11px; }.chat-toggle i { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--lime); top: 4px; left: 39px; border: 2px solid #22c563; }
 .chat-panel { width: min(390px, calc(100vw - 28px)); max-height: min(680px, calc(100vh - 105px)); display: flex; flex-direction: column; background: #f3f7f5; border: 1px solid rgba(11,94,53,.15); border-radius: 19px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,.28); transform-origin: bottom right; transform: scale(.8) translateY(25px); opacity: 0; visibility: hidden; transition: .32s cubic-bezier(.2,.8,.2,1); }.chat-widget.open .chat-panel { opacity: 1; visibility: visible; transform: scale(1) translateY(0); }
@@ -186,8 +186,8 @@ footer { background: #eaf2fb; color: #071b36; padding: 70px 6vw 26px; border-top
 .ticker-group i { color: #5ca6ff; display: inline-flex; align-items: center; font-style: normal; }
 .ticker-group i svg { width: 11px; height: 11px; stroke-width: 1.8; }
 
-.footer-bottom { color: #173b65; font: 800 13px var(--font-display); letter-spacing: .35px; }
-.footer-bottom a { font: 800 9px var(--font-body); letter-spacing: 1px; }
+.footer-bottom { color: #66768a; font: 500 12px var(--font-body); letter-spacing: .2px; }
+.footer-bottom a { font: 600 11px var(--font-body); letter-spacing: .2px; }
 
 .chat-panel { width: min(374px, calc(100vw - 28px)); height: min(720px, calc(100vh - 102px)); max-height: none; border: 4px solid #0b2f22; border-radius: 30px; }
 .chat-phone-bar { flex: 0 0 auto; min-height: 41px; padding: 0 16px; display: flex; align-items: center; gap: 7px; background: #e7f5ed; border-bottom: 1px solid #cfe2d8; color: #3c6653; }
@@ -421,7 +421,7 @@ footer { padding: 27px 4.5vw 14px; background: #fff; border-top: 1px solid #e4eb
 .footer-contact-list address { margin: 0; color: #163252; font: 600 12px var(--font-display); }
 .footer-contact > p { margin: 6px 0 0; padding-top: 9px; border-top: 1px solid #e7ecf2; display: flex; align-items: center; gap: 8px; color: #66768a; font-size: 10.5px; line-height: 1.45; }
 .footer-contact > p svg { width: 16px; height: 16px; flex: 0 0 16px; color: #2475e8; stroke-width: 1.8; }
-.footer-bottom { width: min(1380px, 100%); margin: 18px auto 0; padding-top: 12px; color: #111; font: 800 14px var(--font-display); }
+.footer-bottom { width: min(1380px, 100%); margin: 18px auto 0; padding-top: 12px; color: #66768a; font: 500 12.5px var(--font-body); letter-spacing: 0; }
 .footer-bottom a { left: 0; right: auto; }
 
 @media (max-width: 1050px) {
@@ -439,7 +439,7 @@ footer { padding: 27px 4.5vw 14px; background: #fff; border-top: 1px solid #e4eb
   .ticker > .ticker-rail { gap: 0; animation-duration: 36s; }
   .ticker-group { gap: 25px; padding-right: 25px; }
   .ticker-group > span { gap: 25px; font-size: 10px; }
-  .footer-bottom { margin-top: 12px; font-size: 12px; line-height: 1.5; }
+  .footer-bottom { margin-top: 12px; font-size: 11.5px; line-height: 1.5; font-weight: 400; color: #66768a; }
   footer { padding: 26px 20px 76px; }
   .footer-main { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto; padding: 0 0 19px; margin-bottom: 17px; }
