@@ -497,7 +497,7 @@ export default function Home() {
           <div className="footer-services">
             <div className="footer-title"><h3>{t.ourServices}</h3></div>
             <div className="footer-service-list">
-              {services.map((service) => <a href={`/hizmetler/${service.slug}`} key={service.id}>{service.title}</a>)}
+              {services.map((service) => { const Icon = service.icon; return <a href={`/hizmetler/${service.slug}`} key={service.id}><span><Icon aria-hidden="true" /></span>{service.title}</a>; })}
             </div>
           </div>
           <div className="footer-contact">
