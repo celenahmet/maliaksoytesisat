@@ -74,7 +74,7 @@ const serviceCatalog = [
 
 const copy = {
   tr: {
-    locale: "Türkçe", navLabel: "Ana menü", home: "Anasayfa", services: "Hizmetler", assurance: "Çalışma ve Güvence", contact: "İletişim", technicalService: "TEKNİK SERVİS", menu: "Menüyü aç veya kapat",
+    locale: "Türkçe", navLabel: "Ana menü", home: "Anasayfa", services: "Hizmetler", assurance: "Çalışma ve Güvence", contact: "İletişim", technicalService: "Teknik Servis", menu: "Menüyü aç veya kapat",
     professional: "PROFESYONEL HİZMET", heroA: "Arızanız beklemez.", heroB: "Biz de.", heroLead: "Sincan merkezli ekibimizle Ankara genelinde; elektrik arıza tespitinden kombiye, su tesisatından petek bakımına hızlı teşhis ve özenli çalışma.", quote: "FİYAT AL", viewServices: "HİZMETLERİ İNCELE",
     micro: ["Uzman teknik servis", "Garantili hizmet", "Hızlı çözüm", "Güvenilir destek"], available: "Ulaşılabilir servis", writeWa: "WhatsApp’tan yazın",
     servicesKicker: "01 / HİZMETLER", servicesTitleA: "İhtiyacınız için", servicesTitleB: "doğru çözüm.", servicesLeadKicker: "HIZLI VE NET SERVİS", servicesLead: "İhtiyacınızı seçin; arızayı birlikte değerlendirelim ve uygun hizmet için hızlıca fiyat bilgisi paylaşalım.",
@@ -98,7 +98,7 @@ const copy = {
     },
   },
   en: {
-    locale: "English", navLabel: "Main navigation", home: "Home", services: "Services", assurance: "Process & Assurance", contact: "Contact", technicalService: "TECHNICAL SERVICE", menu: "Open or close menu",
+    locale: "English", navLabel: "Main navigation", home: "Home", services: "Services", assurance: "Process & Assurance", contact: "Contact", technicalService: "Technical Service", menu: "Open or close menu",
     professional: "PROFESSIONAL SERVICE", heroA: "Your repair can’t wait.", heroB: "Neither do we.", heroLead: "Fast diagnosis and careful workmanship for electrical faults, boilers, radiators and plumbing throughout your home.", quote: "GET A QUOTE", viewServices: "VIEW SERVICES",
     micro: ["Expert technical service", "Guaranteed service", "Fast solutions", "Dependable support"], available: "Service available", writeWa: "Message us on WhatsApp",
     servicesKicker: "01 / SERVICES", servicesTitleA: "The right solution", servicesTitleB: "for your needs.", servicesLeadKicker: "FAST, CLEAR SERVICE", servicesLead: "Choose what you need; we will assess the issue together and quickly provide information for the right service.",
