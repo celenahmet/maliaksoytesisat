@@ -393,17 +393,17 @@ footer { padding: 27px 4.5vw 14px; background: #fff; border-top: 1px solid #e4eb
 .footer-identity strong { font: 700 clamp(19px, 1.25vw, 23px) var(--font-display); letter-spacing: .1px; }
 .footer-identity span { margin-top: 5px; color: #1264c7; font-size: 7px; letter-spacing: 3.5px; }
 .footer-identity i { display: block; width: 32px; height: 2px; margin-top: 10px; background: #2c7ef8; border-radius: 3px; }
-.footer-brand > p { max-width: 520px; margin-top: 13px; color: #66768a; font-size: 9.5px; font-weight: 400; line-height: 1.65; }
+.footer-brand > p { max-width: 520px; margin-top: 20px; color: #66768a; font-size: 9.5px; font-weight: 400; line-height: 1.65; }
 
 .footer-services, .footer-contact { border-left: 1px solid #e2e9f1; padding: 0 32px 4px; }
-.footer-title { min-height: 56px; margin-bottom: 4px; padding-top: 4px; display: flex; align-items: flex-start; gap: 0; box-sizing: border-box; }
+.footer-title { min-height: 80px; margin-bottom: 0; padding-top: 0; display: flex; align-items: center; gap: 0; box-sizing: border-box; }
 .footer-title > span { width: 44px; height: 44px; flex: 0 0 44px; display: grid; place-items: center; color: #2173e8; border: 1px solid #dbe8f8; border-radius: 12px; background: #f8fbff; box-shadow: 0 7px 18px rgba(26,100,207,.06); }
 .footer-title > span svg { width: 20px; height: 20px; stroke-width: 1.7; }
 .footer-title h3 { margin: 0; color: #102847; font: 700 18px var(--font-display); letter-spacing: -.25px; }
 .footer-title small { margin: 0; color: #2377ec; font: 900 9px var(--font-body); letter-spacing: 3px; }
 
 .footer-service-list { display: grid; gap: 8px; }
-.footer-service-list a { min-height: 0; padding: 4px 0; display: flex; align-items: center; border: 0; color: #40536a; font-size: 10px; font-weight: 550; }
+.footer-service-list a { min-height: 39px; padding: 0; display: flex; align-items: center; border: 0; color: #40536a; font-size: 10px; font-weight: 550; }
 .footer-service-list a:hover { color: #1d6fe8; }
 .footer-service-list a > span, .footer-service-list a svg { display: none; }
 
