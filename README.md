@@ -18,7 +18,6 @@ npm install
 npm run dev
 ```
 
-Site `http://localhost:3001` adresinde açılır.
 
 ## Kontroller
 
