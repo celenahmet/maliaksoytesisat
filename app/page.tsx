@@ -510,7 +510,7 @@ export default function Home() {
             <p><Info aria-hidden="true" /> {t.serviceArea}</p>
           </div>
         </div>
-        <div className="footer-bottom"><a href="#top"><ArrowUp aria-hidden="true" /> {t.backTop}</a><span>M. Ali Aksoy © {new Date().getFullYear()} {t.rights}</span></div>
+        <div className="footer-bottom"><a href="#top"><ArrowUp aria-hidden="true" /> {t.backTop}</a><span>© {new Date().getFullYear()} M. Ali Aksoy Teknik Servis. {t.rights}</span></div>
       </footer>
 
       <div className={`a11y-widget${a11yDockRight ? " dock-right" : ""}`} style={{ left: a11yPosition.x, top: a11yPosition.y }}>

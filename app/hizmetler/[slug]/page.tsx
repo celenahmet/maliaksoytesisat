@@ -89,7 +89,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <Link className="service-back" href="/#hizmetler" prefetch={false}><ArrowLeft aria-hidden="true" /> Tüm hizmetlere dön</Link>
       </main>
 
-      <footer className="service-mini-footer"><strong>M. Ali Aksoy Teknik Servis</strong><span>Sincan / Ankara · {PHONE_DISPLAY} · bilgi@maliaksoy.com</span><small>© {new Date().getFullYear()} Tüm Hakları Saklıdır.</small></footer>
+      <footer className="service-mini-footer"><strong>M. Ali Aksoy Teknik Servis</strong><span>Sincan / Ankara · {PHONE_DISPLAY} · bilgi@maliaksoy.com</span><small>© {new Date().getFullYear()} M. Ali Aksoy Teknik Servis. Tüm Hakları Saklıdır.</small></footer>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
     </>
   );
