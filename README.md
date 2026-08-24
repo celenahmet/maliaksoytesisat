@@ -1,6 +1,6 @@
 # M. Ali Aksoy Teknik Servis
 
-Ankara ve Sincan merkezli elektrik arıza tespiti, küçük ev aletleri bakımı, kombi-petek temizliği ve su tesisatı hizmetleri için hazırlanmış kurumsal web sitesi.
+Ankara  merkezli elektrik arıza tespiti, küçük ev aletleri bakımı, kombi-petek temizliği ve su tesisatı hizmetleri için hazırlanmış kurumsal web sitesi.
 
 ## Özellikler
 
